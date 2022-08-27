@@ -1,0 +1,16 @@
+{
+    "name": "gumarov-dev/microsoft-sso-auth",
+    "description": "description",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "gumarov-dev",
+            "email": "gumarov2017@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/contracts": "^7.0|^8.0|^9.0"
+    }
+}
