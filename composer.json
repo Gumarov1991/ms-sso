@@ -13,8 +13,10 @@
         "php": "^7.4|^8.0",
         "illuminate/contracts": "^7.0|^8.0|^9.0"
     },
-    "psr-4": {
-        "GumarovDev\\MicrosoftSsoAuth\\": "src"
+    "autoload": {
+        "psr-4": {
+            "GumarovDev\\MicrosoftSsoAuth\\": "src"
+        }
     },
     "extra": {
         "laravel": {
@@ -26,4 +28,4 @@
             }
         }
     }
-}
+},
