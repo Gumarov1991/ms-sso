@@ -54,12 +54,15 @@ class MsSsoAuth
      * @throws Exception
      * @return string
      */
-    public function getAuthUserEmail(string $code, string $encryptedKey): string
+    public function getAuthUserEmail(): string
     {
+        $code = request()->code;
+        $encryptedKey = request()->state;
+
         if ($code && $this->checkEncryptedKey($encryptedKey)) {
             $accessToken = $this->getMsAuthToken($code);
         } else {
-            throw new Exception('пустой $msCode или не прошла проверка зашифрованного ключа');
+            throw new Exception('пустой code или не прошла проверка зашифрованного ключа');
         }
 
         if ($accessToken) {
@@ -163,8 +166,8 @@ class MsSsoAuth
             'client_id' => $this->clientId,
             'scope' => 'user.read',
             'grant_type' => 'authorization_code',
-            'redirect_uri' => '',
-            'client_secret' => $this->redirectUri,
+            'redirect_uri' => $this->redirectUri,
+            'client_secret' => $this->secretKey,
             'code' => $code,
         ];
     }
