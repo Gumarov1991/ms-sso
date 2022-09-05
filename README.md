@@ -21,7 +21,7 @@ MS_REDIRECT_URI=
 ```
 use GumarovDev\MicrosoftSsoAuth\Facades\MsSsoAuth;
 
-MsSsoAuth::getAuthUserEmail()
+MsSsoAuth::checkAuthByRedirect()
 ```
 
 - В месте куда нас перекинет Microsoft, метод вернет $email авторизованного пользователя
