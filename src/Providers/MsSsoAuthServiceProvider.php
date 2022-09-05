@@ -14,7 +14,7 @@ class MsSsoAuthServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/config/ms-auth.php',
+            __DIR__ . '/../config/ms-auth.php',
             'ms-auth'
         );
     }
