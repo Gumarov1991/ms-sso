@@ -4,7 +4,7 @@
 - если установлен illuminate/contracts, то его минимальная версия 7.0
 
 ### Установка
-- composer require gumarov-dev/microsoft-sso-dev
+- composer require gumarov-dev/microsoft-sso-auth
 - php artisan vendor:publish --provider='GumarovDev\MicrosoftSsoAuth\Providers\MsSsoAuthServiceProvider'
 
 ### Использование
