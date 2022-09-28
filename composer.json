@@ -11,7 +11,8 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
-        "illuminate/contracts": "^7.0|^8.0|^9.0"
+        "illuminate/contracts": "^7.0|^8.0|^9.0",
+        "microsoft/microsoft-graph": "^1.8"
     },
     "autoload": {
         "psr-4": {
@@ -24,7 +25,8 @@
                 "GumarovDev\\MicrosoftSsoAuth\\Providers\\MsSsoAuthServiceProvider"
             ],
             "aliases": {
-                "MsSsoAuth": "GumarovDev\\MicrosoftSsoAuth\\Facades\\MsSsoAuth"
+                "MsSsoAuth": "GumarovDev\\MicrosoftSsoAuth\\Facades\\MsSsoAuth",
+                "GraphApi": "GumarovDev\\MicrosoftSsoAuth\\Facades\\GraphApi"
             }
         }
     }
